@@ -1,0 +1,97 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.menu-bar{
+   background-color: #000000; 
+   height: 80px;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0 5%;
+}
+
+.logo{
+    color: #F4DFC8;
+    font-size: 30px;
+    text-align: left;
+}
+
+.logo span {
+    color: #B4BDFF;
+}
+
+.menu-bar ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu-bar ul li {
+    padding: 10px 30px;
+    position: relative;
+}
+
+.menu-bar ul li a {
+    color: #F4DFC8;
+    text-decoration: none;
+    font-size: 20px;
+    transition: all 0.3s;
+}
+
+.menu-bar ul li a:hover {
+    color: #B4BDFF;
+}
+
+.drop-menu{
+    display: none;
+}
+
+.menu-bar ul li:hover .drop-menu{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: #000000;
+}
+
+.menu-bar ul li:hover .drop-menu ul {
+    display: block;
+    margin: 10px;
+}
+
+.menu-bar ul li:hover .drop-menu ul li {
+    width: 150px;
+    padding: 10px;
+}
+
+.fas {
+    float: right;
+    margin-left: 10px;
+    padding-top: 3px;
+}
+
+.drop-menu-1{
+    display: none;
+}
+
+.drop-menu ul li:hover .drop-menu-1{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 150px;
+    background-color: #000000;
+}
+
+.hero{
+    height: calc(100vh - 80px);
+    background-color: #FAF6F0;
+    background-repeat: no-repeat;
+}
